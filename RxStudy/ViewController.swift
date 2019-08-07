@@ -48,6 +48,7 @@ class ViewController: UIViewController {
             .do(onNext: { _ in
                 print("flatMap ThreadName: \(threadName())")
             })
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "subs"))
             .subscribe(onNext: { _ in
                 print("tapObservableSubscribeOn ThreadName: \(threadName())")
             })
