@@ -18,6 +18,7 @@ subscribeOnButton ThreadName: main
 # 추측
 `subscribeOn` 은 지정되지 않은 Thread에만 적용될 수 있다는 것이다.
 
+### Kotlin Coroutine
 [Kotlin coroutine](https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/coroutine-context-and-dispatchers.md#coroutine-context-and-dispatchers)
 
 `Unconfined` 의미로 지정된 Thread가 없다는 뜻이다.
@@ -30,6 +31,7 @@ subscribeOnButton ThreadName: main
 
 ------ Unconfined ------- Default --------|--->
 
+### Unconfined Thread
 ```
 Observable.just(1)
             .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "subs"))
