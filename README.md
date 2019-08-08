@@ -68,3 +68,41 @@ tapObservableSubscribeOn ThreadName: flatMap
 `subscribeOn은 위치와 상관없이 한번만 쓰면 된다` 라는 설명을 들었지만 새로운 Observable Stream 마다 적용되는 것을 확인할 수 있다. 
 
 이것을 통해 `Thread 상속`이 되는 것을 알았다.
+
+# 다른 의견 (라이노님)
+가장 첫 subscribeOn 을 한 thread에서 실행되는 것을 확인하였다. 
+
+```
+Observable.just(1)
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "first"))
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "second"))
+            .subscribeOn(ConcurrentDispatchQueueScheduler.init(qos: .default))
+            .subscribe(onNext: { _ in
+                print("multipleSubscribeOn ThreadName: \(threadName())")
+            })
+```
+
+```
+multipleSubscribeOn ThreadName: first
+```
+### `subscribeOn`의 위치는 상관이 있다!
+```
+`subscribeOn`의 위치는 상관이 있다!
+```
+다른 예제를 살펴보자
+```
+Observable.just(1)
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "first"))
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "second"))
+            .flatMap { _ in self.createObservable("flatMap") }
+            .subscribeOn(ConcurrentDispatchQueueScheduler.init(qos: .default))
+            .subscribe(onNext: { _ in
+                print("multipleSubscribeOn ThreadName: \(threadName())")
+            })
+```
+위와 차이점은 flatMap 의 유무 차이가 있다.
+
+실행결과: 
+```
+multipleSubscribeOn ThreadName: flatMap
+```
