@@ -48,13 +48,21 @@ class ViewController: UIViewController {
             .do(onNext: { _ in
                 print("flatMap ThreadName: \(threadName())")
             })
-            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "subs"))
             .subscribe(onNext: { _ in
                 print("tapObservableSubscribeOn ThreadName: \(threadName())")
             })
     }
     func createObservable(_ with: String) -> Observable<Int> {
         return Observable.just(1).subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: with))
+    }
+    @IBAction func multipleSubscribeOn(_ sender: Any) {
+        Observable.just(1)
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "first"))
+            .subscribeOn(SerialDispatchQueueScheduler(internalSerialQueueName: "second"))
+            .subscribeOn(ConcurrentDispatchQueueScheduler.init(qos: .default))
+            .subscribe(onNext: { _ in
+                print("multipleSubscribeOn ThreadName: \(threadName())")
+            })
     }
 }
 
