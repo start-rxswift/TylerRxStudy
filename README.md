@@ -7,3 +7,5 @@
 3. 10회만 Retry
 
 # Binder, ControlEvent, DelegateProxy
+
+# subscribe flow
