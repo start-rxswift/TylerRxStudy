@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49702A34284129BF3FBEF686 /* Pods_RxBinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46773015F8F2FCE06D0E1E5E /* Pods_RxBinder.framework */; };
+		7ABDA64106499FBFA7BF954F /* Pods_RxBinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1AE94A45F0B5F8D8EB6C0D /* Pods_RxBinderTests.framework */; };
 		BDE625B7231B8D940029C9E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE625B6231B8D940029C9E3 /* AppDelegate.swift */; };
 		BDE625B9231B8D940029C9E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE625B8231B8D940029C9E3 /* ViewController.swift */; };
 		BDE625BC231B8D950029C9E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE625BA231B8D950029C9E3 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		BDE625C1231B8D960029C9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE625C0231B8D960029C9E3 /* Assets.xcassets */; };
 		BDE625C4231B8D960029C9E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDE625C2231B8D960029C9E3 /* LaunchScreen.storyboard */; };
 		BDE625CF231B8D960029C9E3 /* RxBinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE625CE231B8D960029C9E3 /* RxBinderTests.swift */; };
+		BDE625DC231BAE4A0029C9E3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE625DB231BAE480029C9E3 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46773015F8F2FCE06D0E1E5E /* Pods_RxBinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9246C547C7D82758FED1F96B /* Pods-RxBinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBinder.release.xcconfig"; path = "Target Support Files/Pods-RxBinder/Pods-RxBinder.release.xcconfig"; sourceTree = "<group>"; };
+		B6F5812B954FBB5E3668FD49 /* Pods-RxBinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBinderTests.release.xcconfig"; path = "Target Support Files/Pods-RxBinderTests/Pods-RxBinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		BDE625B3231B8D940029C9E3 /* RxBinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxBinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE625B6231B8D940029C9E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDE625B8231B8D940029C9E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,10 @@
 		BDE625CA231B8D960029C9E3 /* RxBinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxBinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE625CE231B8D960029C9E3 /* RxBinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBinderTests.swift; sourceTree = "<group>"; };
 		BDE625D0231B8D960029C9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDE625DB231BAE480029C9E3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C6D7A121BE4B086BB31C6B32 /* Pods-RxBinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBinderTests.debug.xcconfig"; path = "Target Support Files/Pods-RxBinderTests/Pods-RxBinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2F434FBC6E32DBC75B11CAA /* Pods-RxBinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBinder.debug.xcconfig"; path = "Target Support Files/Pods-RxBinder/Pods-RxBinder.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1AE94A45F0B5F8D8EB6C0D /* Pods_RxBinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxBinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49702A34284129BF3FBEF686 /* Pods_RxBinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +63,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABDA64106499FBFA7BF954F /* Pods_RxBinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361F033313FDC5DC17A9BEB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2F434FBC6E32DBC75B11CAA /* Pods-RxBinder.debug.xcconfig */,
+				9246C547C7D82758FED1F96B /* Pods-RxBinder.release.xcconfig */,
+				C6D7A121BE4B086BB31C6B32 /* Pods-RxBinderTests.debug.xcconfig */,
+				B6F5812B954FBB5E3668FD49 /* Pods-RxBinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7FC48DDDFF03644696B5BFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46773015F8F2FCE06D0E1E5E /* Pods_RxBinder.framework */,
+				FF1AE94A45F0B5F8D8EB6C0D /* Pods_RxBinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDE625AA231B8D940029C9E3 = {
 			isa = PBXGroup;
 			children = (
 				BDE625B5231B8D940029C9E3 /* RxBinder */,
 				BDE625CD231B8D960029C9E3 /* RxBinderTests */,
 				BDE625B4231B8D940029C9E3 /* Products */,
+				361F033313FDC5DC17A9BEB4 /* Pods */,
+				B7FC48DDDFF03644696B5BFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				BDE625B6231B8D940029C9E3 /* AppDelegate.swift */,
+				BDE625DB231BAE480029C9E3 /* ViewModel.swift */,
 				BDE625B8231B8D940029C9E3 /* ViewController.swift */,
 				BDE625BA231B8D950029C9E3 /* Main.storyboard */,
 				BDE625C0231B8D960029C9E3 /* Assets.xcassets */,
@@ -106,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDE625D3231B8D960029C9E3 /* Build configuration list for PBXNativeTarget "RxBinder" */;
 			buildPhases = (
+				380B3A18E6430EE37E9F0769 /* [CP] Check Pods Manifest.lock */,
 				BDE625AF231B8D940029C9E3 /* Sources */,
 				BDE625B0231B8D940029C9E3 /* Frameworks */,
 				BDE625B1231B8D940029C9E3 /* Resources */,
+				6626FE907CF40B25F2828D5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDE625D6231B8D960029C9E3 /* Build configuration list for PBXNativeTarget "RxBinderTests" */;
 			buildPhases = (
+				5F2E65F7EF08EB9A4084F7C5 /* [CP] Check Pods Manifest.lock */,
 				BDE625C6231B8D960029C9E3 /* Sources */,
 				BDE625C7231B8D960029C9E3 /* Frameworks */,
 				BDE625C8231B8D960029C9E3 /* Resources */,
@@ -195,6 +234,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		380B3A18E6430EE37E9F0769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxBinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2E65F7EF08EB9A4084F7C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxBinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6626FE907CF40B25F2828D5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxBinder/Pods-RxBinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxBinder/Pods-RxBinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDE625AF231B8D940029C9E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -202,6 +314,7 @@
 			files = (
 				BDE625BF231B8D950029C9E3 /* RxBinder.xcdatamodeld in Sources */,
 				BDE625B9231B8D940029C9E3 /* ViewController.swift in Sources */,
+				BDE625DC231BAE4A0029C9E3 /* ViewModel.swift in Sources */,
 				BDE625B7231B8D940029C9E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +475,7 @@
 		};
 		BDE625D4231B8D960029C9E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F434FBC6E32DBC75B11CAA /* Pods-RxBinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +494,7 @@
 		};
 		BDE625D5231B8D960029C9E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9246C547C7D82758FED1F96B /* Pods-RxBinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +513,7 @@
 		};
 		BDE625D7231B8D960029C9E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D7A121BE4B086BB31C6B32 /* Pods-RxBinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +535,7 @@
 		};
 		BDE625D8231B8D960029C9E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F5812B954FBB5E3668FD49 /* Pods-RxBinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

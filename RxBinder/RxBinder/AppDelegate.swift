@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

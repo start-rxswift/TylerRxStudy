@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var customAttr: UILabel!
+    @IBOutlet weak var controlEventButton: UIButton!
+    
+    private let viewModel = ViewModel()
+    private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        controlEventButton.rx.tap
+            .bind(to: viewModel.controlTap)
+            .disposed(by: disposeBag)
+        
+        viewModel
+            .binderText
+            .bind(to: customAttr.rx.text)
+            .disposed(by: disposeBag)
+
     }
-
-
 }
 
