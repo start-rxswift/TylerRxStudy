@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDelegateProxy/DelegateProxy/RxMKLocalSearchCompleterDelegateProxy.swift"
+            timestampString = "589116152.294113"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "registerKnownImplementations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static RxDelegateProxy.RxMKLocalSearchCompleterDelegateProxy.registerKnownImplementations() -&gt; ()"
+                  moduleName = "RxDelegateProxy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tskim/Documents/Study/TylerRxStudy/RxDelegateProxy/RxDelegateProxy/DelegateProxy/RxMKLocalSearchCompleterDelegateProxy.swift"
+                  timestampString = "589114598.557579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.MKLocalSearchCompleter) -&gt; RxDelegateProxy.RxMKLocalSearchCompleterDelegateProxy in static RxDelegateProxy.RxMKLocalSearchCompleterDelegateProxy.registerKnownImplementations() -&gt; ()"
+                  moduleName = "RxDelegateProxy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tskim/Documents/Study/TylerRxStudy/RxDelegateProxy/RxDelegateProxy/DelegateProxy/RxMKLocalSearchCompleterDelegateProxy.swift"
+                  timestampString = "589114598.559749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RxCocoa/RxCocoa/Common/DelegateProxyType.swift"
+            timestampString = "589114996.477193"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "417"
+            endingLineNumber = "417"
+            landmarkName = "createProxy(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/RxCocoa/RxCocoa/Common/DelegateProxyType.swift"
+            timestampString = "589114996.477748"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "409"
+            endingLineNumber = "409"
+            landmarkName = "extend(make:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
