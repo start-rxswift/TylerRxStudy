@@ -144,8 +144,9 @@ views that can have only one delegate/datasource registered
 
 Proxy 의 정의에서 위임과 동작의 변형 두 가지 모두를 수행하고 있다는 것을 알 수 있습니다.
 
+```
 실제 작업을 해당 객체에 위임(Delegate)하거나 동작을 변경합니다.
- 
+ ```
 
  
 
