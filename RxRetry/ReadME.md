@@ -32,7 +32,12 @@ extension ObservableType {
 
 
 ```
-Observable.just("Test")
+//Observable.just(3)
+//    .map { i -> Int in
+//        if i < 2 { throw TestError.test }
+//        else { return i }
+//    }
+Observable.just(1)
     .map { _ in throw TestError.test }
     .retryWhen(
         predicate: {
@@ -42,17 +47,19 @@ Observable.just("Test")
             default:
                 return false
             }
-    },
+        },
         maxRetry: 3,
-        timeInterval: RxTimeInterval.milliseconds(1500),
+        timeInterval: RxTimeInterval.milliseconds(1000),
         scheduler: MainScheduler.asyncInstance
     )
     .debug("retryWhen")
-    .subscribe(onNext: {
-        print("onNext: \($0)")
-    }, onError: {
-        print("onError: \($0)")
-    })
+    .subscribe(onNext: { _ in
+        
+//        print("onNext: \($0)")
+    }, onError: { _ in
+        })
+
+
 ```
 
 
