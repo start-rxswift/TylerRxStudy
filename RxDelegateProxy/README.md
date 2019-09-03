@@ -104,14 +104,8 @@ queryFragment 를 전달하면 completerDidUpdateResults(_:) 으로 결과를 �
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbjdS7d%2FbtqxVeAaJTZ%2FsGY107LcbuB7wat8BTSCg1%2Fimg.png" alt="alt text" width="360" height="whatever">
 
 
-### 실행 순서
-1. Client 에서 MKLocalSearchCompleter 의 didUpdateResults 를 호출합니다.
-2. public var delegate Getter가 호출됩니다.
-3. RxMKLocalSearchCompleterDelegateProxy.proxy(for:) Proxy 객체를 생성합니다. 
-4. proxy(for:) 를 호출하면 RxSwift 내부적으로 Proxy 를 생성하는 로직이 실행됩니다.
-5. RxSwift는 registerKnownImplementations 를 호출합니다.
-6. self.register 로 RxMKLocalSearchCompleterDelegateProxy를 DelegateFactory에 저장합니다.
-
+### 시퀀스 다이어그램
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FmNw3Q%2Fbtqx1giutGf%2FU8OtaVMVPszcwKhxt5xV11%2Fimg.png)
 
 
 ### RxMKLocalSearchCompleterDelegateProxy의 `DelegateProxy` 갑자기 튀어나와서 당황하셨을 겁니다.
