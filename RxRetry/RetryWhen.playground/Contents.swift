@@ -8,7 +8,7 @@ class Timestamp {
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS "
         return formatter
     }()
-    
+
     func printTimestamp() -> String {
         return dateFormatter.string(from: Date())
     }
@@ -26,7 +26,7 @@ extension ObservableType {
         maxRetry: Int,
         timeInterval: DispatchTimeInterval,
         scheduler: SchedulerType
-        ) -> Observable<Element>  {
+    ) -> Observable<Element> {
         return self.retryWhen { errorObservable -> Observable<Void> in
             return Observable
                 .zip(
@@ -39,12 +39,17 @@ extension ObservableType {
                         print("\(Timestamp().printTimestamp()): retry count: \(interval)")
                         if interval >= maxRetry { throw error }
                         return ()
-                })
+                    })
         }
     }
 }
 
-Observable.just("Test")
+//Observable.just(3)
+//    .map { i -> Int in
+//        if i < 2 { throw TestError.test }
+//        else { return i }
+//    }
+Observable.just(1)
     .map { _ in throw TestError.test }
     .retryWhen(
         predicate: {
@@ -54,14 +59,15 @@ Observable.just("Test")
             default:
                 return false
             }
-    },
+        },
         maxRetry: 3,
-        timeInterval: RxTimeInterval.milliseconds(1500),
+        timeInterval: RxTimeInterval.milliseconds(1000),
         scheduler: MainScheduler.asyncInstance
     )
     .debug("retryWhen")
-    .subscribe(onNext: {
-        print("onNext: \($0)")
-    }, onError: { _ in
-    })
+    .subscribe(onNext: { _ in
         
+//        print("onNext: \($0)")
+    }, onError: { _ in
+        })
+
