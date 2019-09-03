@@ -1,3 +1,16 @@
+
+Conditions:
+
+ 
+
+1. Restful API 실패 시 3번의 retry 해야함
+
+2. 실패하면 다시 요청할 때 까지 300 millisecond의  Interval 이 있어야 함.
+
+3. 특정 Error 값이 발생할 경우에만 retry 를 해야 함
+
+ 
+ 
 ```
 enum TestError: Error {
     case test
