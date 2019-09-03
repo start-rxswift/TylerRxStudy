@@ -1,6 +1,20 @@
 import UIKit
 import RxSwift
 
+
+class Timestamp {
+    lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS "
+        return formatter
+    }()
+    
+    func printTimestamp() -> String {
+        return dateFormatter.string(from: Date())
+    }
+}
+
+
 enum TestError: Error {
     case test
 }
@@ -22,7 +36,7 @@ extension ObservableType {
                     },
                     Observable<Int>.interval(timeInterval, scheduler: scheduler),
                     resultSelector: { error, interval in
-                        print("RetryWhen: \(error) \(interval)")
+                        print("\(Timestamp().printTimestamp()): retry count: \(interval)")
                         if interval >= maxRetry { throw error }
                         return ()
                 })
@@ -48,7 +62,6 @@ Observable.just("Test")
     .debug("retryWhen")
     .subscribe(onNext: {
         print("onNext: \($0)")
-    }, onError: {
-        print("onError: \($0)")
+    }, onError: { _ in
     })
         
