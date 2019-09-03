@@ -54,3 +54,15 @@ Observable.just("Test")
         print("onError: \($0)")
     })
 ```
+
+
+결과: 
+```
+2019-09-03 16:56:13.589: retryWhen -> subscribed
+2019-09-03 16:56:15.109 : retry count: 0
+2019-09-03 16:56:16.609 : retry count: 1
+2019-09-03 16:56:18.109 : retry count: 2
+2019-09-03 16:56:19.608 : retry count: 3
+2019-09-03 16:56:19.609: retryWhen -> Event error(test)
+2019-09-03 16:56:19.609: retryWhen -> isDisposed
+```
