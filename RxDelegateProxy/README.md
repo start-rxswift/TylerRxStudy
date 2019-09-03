@@ -105,6 +105,8 @@ queryFragment 를 전달하면 completerDidUpdateResults(_:) 으로 결과를 �
 
 
 ### 시퀀스 다이어그램
+개인적인 이해를 바탕으로 직접 그렸기 때문에 정확하지 않을 수 있습니다.
+
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FmNw3Q%2Fbtqx1giutGf%2FU8OtaVMVPszcwKhxt5xV11%2Fimg.png)
 
 
