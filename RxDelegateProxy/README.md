@@ -107,7 +107,7 @@ queryFragment 를 전달하면 completerDidUpdateResults(_:) 으로 결과를 �
 ### 시퀀스 다이어그램
 개인적인 이해를 바탕으로 직접 그렸기 때문에 정확하지 않을 수 있습니다.
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FmNw3Q%2Fbtqx1giutGf%2FU8OtaVMVPszcwKhxt5xV11%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbdegJN%2Fbtqyd6z115d%2FgG821PUjkwYKDNCcD10us1%2Fimg.png)
 
 
 ### RxMKLocalSearchCompleterDelegateProxy의 `DelegateProxy` 갑자기 튀어나와서 당황하셨을 겁니다.
@@ -143,9 +143,3 @@ Proxy 의 정의에서 위임과 동작의 변형 두 가지 모두를 수행하
 ```
 실제 작업을 해당 객체에 위임(Delegate)하거나 동작을 변경합니다.
  ```
-
- 
-
-즉, UIScrollView  UIScrollViewDelegate 를 등록하고 Swizzling 을 통해서 Observable Sequence 를 사용하며
-
-Observable을 Subscription 하고 있는 객체에게 결과를 전달하는 메커니즘으로 동작합니다.
