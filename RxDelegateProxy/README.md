@@ -51,7 +51,11 @@ Foundation, UIKit, AppKit 및 기타 Cocoa 및 Cocoa Touch 프레임 워크에�
 
 이러한 과정은 Remote Proxy에서 캡슐화될 수 있습니다.
 
-예시) JSON으로 받은 데이터를 Deserializaion 합니다.
+예시) ~~JSON으로 받은 데이터를 Deserializaion 합니다.~~
+
+RPC 
+
+ <img src="https://book.systemsapproach.org/e2e/figures/f05-14-9780123850591.png" width="480" height="whatever">
 
 #### 2. Virtual proxy
 
