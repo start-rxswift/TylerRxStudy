@@ -61,7 +61,13 @@ RPC
 
 지연로딩으로 객체를 생성할 경우에 사용됩니다.
 
-예시) JPA ORM 으로 쿼리의 결과를 조회할 경우에 사용됩니다.
+예시) ~~JPA ORM 으로 쿼리의 결과를 조회할 경우에 사용됩니다.~~
+JPA 프록시 초기화 
+
+ <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F998777345AE567D42BB022" alt="alt text" width="480" height="whatever">
+
+
+> 프록시 초기화란 프록시 객체가 참조하는 실제 엔티티가 persistence context에 생성되어 있지 않을 때, persistence context에 실제 엔티티 생성을 요청하고 생성된 실제 엔티티를 프록시 객체의 참조 변수에 할당하는 과정을 말합니다.
 
 #### 3. Protection proxy
 
