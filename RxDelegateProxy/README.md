@@ -142,16 +142,8 @@ queryFragment 를 전달하면 completerDidUpdateResults(_:) 으로 결과를 �
 views that can have only one delegate/datasource registered
 ```
 
-normal delegate와 Observable sequences 둘다 사용할 수 있다고 하네요.
+`DelegateProxyType` 프로토콜을 사용하면 일반 대리자와 Rx 관찰 가능 시퀀스를 모두 사용할 수 있습니다.
 
-log를 사용해보니 정말 둘다 호출되는 것을 확인할 수 있었습니다.
-
-```
-normal delegate completerDidUpdateResults
-rx.delegate completerDidUpdateResults
-```
-
-> + normal delegate 와 Observable Sequences 둘다 동작하는 것은 디자인 패턴 Proxy 개념과는 약간 다른 것 같습니다.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FI3FlP%2FbtqxZqSV5lX%2FrTtDY6MuCxIvSHuCAHJcl0%2Fimg.png" alt="alt text" width="whatever" height="whatever">
 
