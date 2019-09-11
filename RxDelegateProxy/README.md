@@ -38,7 +38,9 @@ Foundation, UIKit, AppKit 및 기타 Cocoa 및 Cocoa Touch 프레임 워크에�
 
 디자인 패턴의 Proxy 를 찾아볼 수 있었습니다!
 
-: 실제 작업을 해당 객체에 위임(Delegate)하거나 동작을 변경합니다.
+~~: 실제 작업을 해당 객체에 위임(Delegate)하거나 동작을 변경합니다.~~
+
+: : 실제 작업을 해당 객체에 위임합니다.
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FkBQls%2FbtqxWeMuMes%2FkD349NoQAC7VGQuJVSZRCk%2Fimg.png" alt="alt text" width="360" height="whatever">
 
@@ -149,14 +151,11 @@ normal delegate completerDidUpdateResults
 rx.delegate completerDidUpdateResults
 ```
 
+> + normal delegate 와 Observable Sequences 둘다 동작하는 것은 디자인 패턴 Proxy 개념과는 약간 다른 것 같습니다.
+
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FI3FlP%2FbtqxZqSV5lX%2FrTtDY6MuCxIvSHuCAHJcl0%2Fimg.png" alt="alt text" width="whatever" height="whatever">
 
-위 그림은 DelegateProxy는 delegate -> Observable Sequences **동작의 변형** 나타내는 그림입니다. 
+~~위 그림은 DelegateProxy는 delegate -> Observable Sequences **동작의 변형** 나타내는 그림입니다. ~~
 
- 
 
-Proxy 의 정의에서 위임과 동작의 변형 두 가지 모두를 수행하고 있다는 것을 알 수 있습니다.
-
-```
-실제 작업을 해당 객체에 위임(Delegate)하거나 동작을 변경합니다.
- ```
+~~Proxy 의 정의에서 위임과 동작의 변형 두 가지 모두를 수행하고 있다는 것을 알 수 있습니다.~~
