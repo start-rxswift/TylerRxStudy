@@ -141,7 +141,7 @@ rx.delegate completerDidUpdateResults
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FI3FlP%2FbtqxZqSV5lX%2FrTtDY6MuCxIvSHuCAHJcl0%2Fimg.png" alt="alt text" width="whatever" height="whatever">
 
-위 그림은 DelegateProxy는 중간 변환 역할을 나타내는 그림입니다. 
+위 그림은 DelegateProxy는 delegate -> Observable Sequences **동작의 변형** 나타내는 그림입니다. 
 
  
 
