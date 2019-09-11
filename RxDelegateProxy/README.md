@@ -133,16 +133,15 @@ queryFragment 를 전달하면 completerDidUpdateResults(_:) 으로 결과를 �
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FpIjJa%2FbtqxXKkmeDE%2Fx4sGWHqUCsSh8qXZs0quQk%2Fimg.png" alt="alt text" width="whatever" height="whatever">
 
 ### [DelegateProxyType](https://github.com/ReactiveX/RxSwift/blob/master/RxCocoa/Common/DelegateProxyType.swift) 내용에 의하면 
-`DelegateProxyType` 프로토콜을 따르면 Delegate, Observable sequences 를 사용할 수 있다고 하네요.
 
-단 View는 하나의 Delegate or DataSource 만 등록할 수 있습니다.
+`DelegateProxyType` 프로토콜을 사용하면 일반 대리자와 Rx 관찰 가능 시퀀스를 모두 사용할 수 있습니다.
 
 ```
 `DelegateProxyType` protocol enables using both normal delegates and Rx observable sequences with
 views that can have only one delegate/datasource registered
 ```
 
-`DelegateProxyType` 프로토콜을 사용하면 일반 대리자와 Rx 관찰 가능 시퀀스를 모두 사용할 수 있습니다.
+
 
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FI3FlP%2FbtqxZqSV5lX%2FrTtDY6MuCxIvSHuCAHJcl0%2Fimg.png" alt="alt text" width="whatever" height="whatever">
