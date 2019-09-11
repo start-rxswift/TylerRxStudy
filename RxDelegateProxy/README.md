@@ -155,7 +155,8 @@ rx.delegate completerDidUpdateResults
 
 <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FI3FlP%2FbtqxZqSV5lX%2FrTtDY6MuCxIvSHuCAHJcl0%2Fimg.png" alt="alt text" width="whatever" height="whatever">
 
-~~위 그림은 DelegateProxy는 delegate -> Observable Sequences **동작의 변형** 나타내는 그림입니다. ~~
+~~위 그림은 DelegateProxy는 delegate, Observable Sequences 동작의 변형 나타내는 그림입니다.~~
 
+실행중에 동적으로 새로운 행동을 추가할 수 있는 Decorator 패턴과 유사해 보입니다.
 
 ~~Proxy 의 정의에서 위임과 동작의 변형 두 가지 모두를 수행하고 있다는 것을 알 수 있습니다.~~
